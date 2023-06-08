@@ -1,23 +1,32 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    fontSize: {
+      h1: "67px",
+      h2: "51px",
+      h3: "38px",
+      h4: "28px",
+      h5: "22px",
+      base: "16px",
+      caption: "12px",
+    },
     fontFamily: {
-      "Sans-serif": "Roboto, sans-serif",
-      Serif: "IBM Plex Serif, serif",
-      HandWritten: "Allison, cursive",
+      space: "Space Mono, monospace",
+      work: "Work Sans, sans-serif",
+    },
+    colors: {
+      bg: "#2B2B2B",
+      bgSec: "#3B3B3B",
+      captionc: "#858584",
+      white: "#FFFFFF",
+      cta: "#A259FF",
+      "cta-h": "#613599",
+      blue: "#377DF7",
+      pink: "#FF6250",
     },
     extend: {
-      colors: {
-        background: "#F6F3E9",
-        green: {
-          dark: "#487254",
-          "very-dark": "#01110a",
-        },
-        grey: {
-          basic: "#777",
-          border: "#E6E1D2",
-        },
+      backgroundImage: {
+        auction: "url('/Assets/Images/Primary-Mushroom-img.png')",
       },
     },
   },

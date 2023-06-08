@@ -1,9 +1,10 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const NavigationItem = (props) => {
   return (
-    <li className="text-base font-Sans-serif capitalize relative text-green-very-dark hover:text-green-dark after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-green-dark after:origin-left after:absolute after:transition-[width] hover:after:w-full">
-      <a href="/">{props.text}</a>
+    <li
+      className={`font-work font-semibold text-base text-white transition-colors ${props.className} hover:text-cta group`}>
+      <Link to={props.to}>{props.children}</Link>
     </li>
   );
 };
