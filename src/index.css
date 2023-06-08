@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  @apply bg-bg;
-  @apply overflow-x-hidden;
+@layer base {
+  body {
+    @apply bg-background;
+  }
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
 }
